@@ -17,10 +17,12 @@ a:hover {
     --f-montserrat-thin: 'Montserrat-Thin';
 
     --green: #007d2f;
+    --less-black: #1d1d1d;
     --black: #191919;
     --blacker: #171717;
     --gray: #787878;
     --light-gray: #f8f9f9;
+    --gray2: #bcbcbc;
 
 }
 
@@ -72,7 +74,7 @@ a:hover {
 
 .header__title {
     margin-top: -200px;
-    color: #1d1d1d;
+    color: var(--less-black);
     font-size: 36px;
     font-family: var(--f-montserrat);
     line-height: 25px;
@@ -348,5 +350,143 @@ a:hover {
 
 /* =============== /section_quote =================== */
 
+/* =============== section_partners =================== */
+.partners_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 60px;
+}
+
+/* =============== /section_partners =================== */
+
+/* =============== section_feedback =================== */
+.main_feedback {
+    background: var(--light-gray);
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.feedback_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_title {
+    font-family: var(--f-montserrat);
+    font-size: 30px;
+    color: var(--less-black);
+    line-height: 21px;
+}
+
+.feedback_description {
+    font-family: var(--f-nunito);
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 24px;
+    text-align: center;
+}
+
+.feedback_form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.field {
+    background: white;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    color: black;
+    font-family: var(--f-nunito);
+    font-size: 15px;
+    padding: 0px 17px;
+    margin-bottom: 30px;
+}
+
+.field::placeholder {
+    color: var(--gray);
+}
+
+.feedback_comment {
+    height: 170px;
+    padding: 17px;
+}
+
+.feedback_submit {
+    margin: 0 auto;
+}
+
+.feedback_submit_button {
+    height: 55px;
+    background: var(--green);
+    color: white;
+    font-family: var(--f-montserrat);
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+/* =============== /section_feedback =================== */
 
 /* ========= /main ============ */
+
+/* ========= footer ============ */
+.footer {
+    background: #141414;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_company_name {
+    font-family: var(--f-montserrat);
+    font-size: 18px;
+    color: white;
+    line-height: 16px;
+    margin-bottom: 26px;
+}
+
+.footer_company_rights,
+.footer_company_designer {
+    font-family: var(--f-nunito);
+    font-size: 15px;
+    color: var(--gray2);
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.footer_contacts_email,
+.footer_contacts_phone,
+.footer_nav_link {
+    font-family: var(--f-nunito);
+    font-size: 15px;
+    color: var(--gray2);
+    line-height: 24px ;
+}
+
+.footer_contacts_phone {
+    font-family: var(--f-work);
+}
+
+.footer_contacts_email:hover,
+.footer_contacts_phone:hover,
+.footer_nav_link:hover {
+    color: var(--gray2);
+}
+
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========= /footer ============ */
