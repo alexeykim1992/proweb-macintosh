@@ -191,6 +191,11 @@ a:hover {
     background: var(--green);
 }
 
+.skills_measures_content{
+    display: flex;
+    justify-content: space-between;
+}
+
 .skills_measures {
     background: var(--green);
     padding: 82px 0
@@ -198,7 +203,6 @@ a:hover {
 
 .sm_item {
     text-align: center;
-    margin-right: 95px;
 }
 
 .sm_item_digits {
@@ -649,6 +653,7 @@ a:hover {
     color: var(--blacker);
     line-height: 25px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .home_description {
@@ -657,6 +662,88 @@ a:hover {
     color: #fefefe;
     line-height: 27px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 /* =============== /home_page =============== */
+
+/* =============== about_page =============== */
+.about_header{
+    background: #323232;
+}
+
+.about_header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 115px;
+    padding-bottom: 115px;    
+}
+
+.about_page_title{
+    font-family: var(--f-montserrat);
+    font-size: 62px;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about_page_description{
+    font-family: var(--f-nunito);
+    font-size: 22px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main_about_me{
+    overflow: hidden;    
+    background: #f5f5f5;
+}
+
+.about_me_content{    
+    display: flex;
+    justify-content: space-between;     
+}
+
+.about_me_img{
+    position: absolute;
+    right: 0;
+    width: 50vw;
+}
+
+.about_me_info{    
+    padding-top: 140px;
+    padding-bottom: 140px;   
+}
+
+.about_me_title{
+    font-family: var(--f-montserrat);
+    font-size: 30px;
+    color: var(--blacker);
+    line-height: 21px;
+    margin-bottom: 35px;
+}
+
+.about_me_description{
+    font-family: var(--f-nunito);
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 24px;
+}
+
+.about_me_description:nth-of-type(1){
+    margin-bottom: 30px;
+}
+
+.about_me_signature{
+    margin-top: 35px;
+}
+
+.feedback_about{
+    background: white;
+    padding-top: 105px;
+}
+/* =============== /about_page =============== */
