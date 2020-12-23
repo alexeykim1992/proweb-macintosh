@@ -751,22 +751,22 @@ a:hover {
 /* =============== /about_page =============== */
 
 /* =============== project_page =============== */
-.project_pages{
+.project_pages {
     background: #f6f6f6;
     overflow: hidden;
     /* background: blueviolet; */
 }
 
-.project_pages_content{
+.project_pages_content {
     display: flex;
     justify-content: space-between;
 }
 
-.project_left_panel{
+.project_left_panel {
     padding: 100px 0;
 }
 
-.project_title{
+.project_title {
     font-family: var(--f-montserrat);
     font-size: 38px;
     font-weight: bold;
@@ -775,18 +775,18 @@ a:hover {
     margin-bottom: 35px;
 }
 
-.project_description{    
+.project_description {
     font-family: var(--f-nunito);
     font-size: 16px;
     color: var(--gray);
     line-height: 25px;
 }
 
-.project_info{
+.project_info {
     margin-top: 50px;
 }
 
-.project_info_param{
+.project_info_param {
     font-family: var(--f-nunito);
     font-size: 16px;
     color: var(--gray);
@@ -794,24 +794,24 @@ a:hover {
     margin-bottom: 19px;
 }
 
-.project_info_param:last-of-type(1){
+.project_info_param:last-of-type {
     margin-bottom: 0;
 }
 
-.project_info_bold{
+.project_info_bold {
     color: var(--blacker);
     font-family: var(--f-nunito-bold);
 }
 
-.project_description:nth-of-type(1){
+.project_description:nth-of-type(1) {
     margin-bottom: 31px;
 }
 
-.project_right_panel img{
+.project_right_panel img {
     width: 50vw;
 }
 
-.project_content {    
+.project_content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -821,10 +821,10 @@ a:hover {
     background: var(--green);
 }
 
-.project_control_panel_content{    
+.project_control_panel_content {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     height: 100px;
 }
 
@@ -837,7 +837,7 @@ a:hover {
     color: white;
 }
 
-.project-control-arrow p{
+.project-control-arrow p {
     margin-bottom: 0;
 }
 
@@ -845,7 +845,7 @@ a:hover {
     position: static;
 }
 
-.project_control_buttons_panel{
+.project_control_buttons_panel {
     margin: 0;
     width: 16px;
     height: 16px;
@@ -855,7 +855,7 @@ a:hover {
     align-content: space-between;
 }
 
-.project_control_buttons_panel .project_control_button{
+.project_control_buttons_panel .project_control_button {
     width: 6px;
     height: 6px;
     background: white;
@@ -864,17 +864,91 @@ a:hover {
     border: none;
 }
 
-.fa-angle-right.project-control-arrow-icon{
+.fa-angle-right.project-control-arrow-icon {
     margin-left: 14px;
 }
 
-.fa-angle-left.project-control-arrow-icon{
+.fa-angle-left.project-control-arrow-icon {
     margin-right: 14px;
 }
 
-.project-control-arrow-icon{
+.project-control-arrow-icon {
     font-size: 24px;
     color: black;
 }
 
 /* =============== /project_page =============== */
+
+/* =============== contact_page =============== */
+.main_contact {
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+
+.main_contact_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.contact_info_title {
+    font-family: var(--f-montserrat);
+    font-size: 30px;
+    color: var(--blacker);
+    margin-bottom: 35px;
+}
+
+.contact_info_description {
+    font-family: var(--f-nunito);
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.contact_info_params {
+    margin-bottom: 0;
+}
+
+.contact_info_param {
+    font-family: var(--f-nunito);
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 11px;
+    margin-bottom: 25px;
+}
+
+.contact_info_param a{
+    color: inherit;
+}
+
+.contact_info_param:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact_info_bold {
+    font-family: var(--f-nunito-bold);
+    color: var(--blacker);
+}
+
+.contact_feedback {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact_feedback_sumbit {
+    margin-left: 0;
+    padding: 0 15px;
+}
+
+.contact_feedback_button {
+    width: 160px;
+}
+
+.main_contact_map{
+    border: 0;
+    height: 470px;
+    width: 100%;
+}
+
+/* =============== /contact_page =============== */
