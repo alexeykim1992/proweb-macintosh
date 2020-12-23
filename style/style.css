@@ -632,6 +632,12 @@ a:hover {
     top: 100%;
 }
 
+.home_square:nth-last-of-type(2) .home_square_hover,
+.home_square:nth-last-of-type(3) .home_square_hover {
+    top: 100%;
+    left: 0;
+}
+
 .home_square:nth-last-of-type(4) .home_square_hover {
     left: -100%;
     top: 100%;
@@ -918,7 +924,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-.contact_info_param a{
+.contact_info_param a {
     color: inherit;
 }
 
@@ -945,7 +951,7 @@ a:hover {
     width: 160px;
 }
 
-.main_contact_map{
+.main_contact_map {
     border: 0;
     height: 470px;
     width: 100%;
