@@ -482,6 +482,7 @@ a:hover {
 .feedback_comment {
     height: 170px;
     padding: 17px;
+    resize: none;
 }
 
 .feedback_submit {
