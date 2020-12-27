@@ -586,6 +586,10 @@ a:hover {
 /* ========= /footer ============ */
 
 /* =============== templates =============== */
+.template_header{
+    margin-top: 17px;
+}
+
 .header__nav_short {
     height: 100px;
 }

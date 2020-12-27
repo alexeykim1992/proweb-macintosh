@@ -396,14 +396,20 @@
         margin-bottom: 30px;
     }
 
-    .footer_nav{
+    .footer_nav {
         justify-content: center;
     }
 }
 
-@media(max-width:460px){
-    
-    .feedback_submit_button_span{
+@media(max-width: 519px) {
+    .footer_name_containter{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 460px) {
+
+    .feedback_submit_button_span {
         display: none;
     }
 }

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../libs/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../icons/css/all.min.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../media/media.css">
     <title>Macintosh</title>
 </head>
 
@@ -14,22 +16,28 @@
 
     <header class="template_header">
         <div class="container">
-            <div class="row header__nav header__nav_short">
-                <a href="../index.html" class="col-xl-1">
+            <nav class="navbar navbar-expand-md header__nav">
+                <a href="../index.html" class="navbar-brand">
                     <img src="../img/header_logo.png" class="header_logo" alt="">
                 </a>
-                <ul class="nav_list nav_list_short col-xl-3">
-                    <li><a href="home.html" class="nav_list_link">Home</a></li>
-                    <li><a href="about.html" class="nav_list_link">About</a></li>
-                    <li><a href="contact.html" class="nav_list_link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="home_header">
-            <div class="container home_header_content">
-                <h2 class="home_title">UI/UX & Graphic Designer</h2>
-                <p class="home_description col-xl-6">I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development</p>
-            </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar_icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto nav_list nav_list_short">
+                        <li class="nav-item active">
+                            <a href="home.html" class="nav-link nav_list_link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link nav_list_link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link nav_list_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -113,31 +121,31 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer_content">
-                <div class="footer_title">
+                <div class="footer_name_containter">
                     <h3 class="footer_company_name">Macintosh Design, Inc.</h3>
                     <p class="footer_company_rights">© 2017 Macintosh. All rights reserved.</p>
                     <p class="footer_company_designer">Designed by Jefry.</p>
                 </div>
 
-                <div class="footer_contacts col-xl-2">
+                <div class="footer_contacts col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
                     <a href="mailto:hello@pirolltheme.com" class="footer_contacts_email">hello@pirolltheme.com</a>
                     <a href="tel:+44987065908" class="footer_contacts_phone">+44 987 065 908</a>
                 </div>
 
-                <ul class="footer_nav col-xl-3">
-                    <div class="col-xl-4">
+                <ul class="footer_nav col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">Projects</a></li>
                         <li><a href="" class="footer_nav_link">About</a></li>
                         <li><a href="" class="footer_nav_link">Services</a></li>
                         <li><a href="" class="footer_nav_link">Career</a></li>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">News</a></li>
                         <li><a href="" class="footer_nav_link">Events</a></li>
                         <li><a href="" class="footer_nav_link">Contact</a></li>
                         <li><a href="" class="footer_nav_link">Legals</a></li>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">Facebook</a></li>
                         <li><a href="" class="footer_nav_link">Twitter</a></li>
                         <li><a href="" class="footer_nav_link">Instagram</a></li>
