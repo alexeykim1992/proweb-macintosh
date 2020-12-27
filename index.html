@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="libs/bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="media/media.css">
     <title>Macintosh</title>
 </head>
 
@@ -14,20 +16,41 @@
 
     <header class="header">
         <div class="container header__container">
-            <div class="row header__nav">
-                <a href="index.html" class="col-xl-1">
+            <nav class="navbar navbar-expand-md header__nav">
+                <a href="index.html" class="navbar-brand">
                     <img src="img/header_logo.png" class="header_logo" alt="">
                 </a>
-                <ul class="nav_list col-xl-7">
-                    <li><a href="pages/home.html" class="nav_list_link">Home</a></li>
-                    <li><a href="pages/about.html" class="nav_list_link">About</a></li>
-                    <li><a href="pages/project.html" class="nav_list_link">Work</a></li>
-                    <li><a href="" class="nav_list_link">Process</a></li>
-                    <li><a href="" class="nav_list_link">Services</a></li>
-                    <li><a href="" class="nav_list_link">Testimonials</a></li>
-                    <li><a href="pages/contact.html" class="nav_list_link">Contact</a></li>
-                </ul>
-            </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar_icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto nav_list">
+                        <li class="nav-item active">
+                            <a href="pages/home.html" class="nav-link nav_list_link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/about.html" class="nav-link nav_list_link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/project.html" class="nav-link nav_list_link">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav_list_link">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav_list_link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav_list_link">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html" class="nav-link nav_list_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
             <div class="header__content">
                 <h1 class="header__title">We Design and Develop</h1>
                 <p class="header__description">We are a new design studio based in USA. We have over
@@ -47,57 +70,61 @@
             <img src="img/signature.png" alt="">
         </section>
 
-        <section class="container-fluid main_skills">
-            <div class="row skills_progress ">
-                <div class="sp_left_panel">
-                    <div class="sp_left_panel_container">
-                        <h3 class="sp_title">Professional Skills</h3>
-                        <ul class="sp_list">
-                            <li class="sp_item">
-                                <p class="sp_item_text">UI/UX Design</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li class="sp_item">
-                                <p class="sp_item_text">Web Development</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li class="sp_item">
-                                <p class="sp_item_text">Marketing</p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                        </ul>
+        <section class="main_skills">
+            <div class="container">
+                <div class="row skills_progress">
+                    <div class="sp_left_panel col-6">
+                        <div class="sp_left_panel_container">
+                            <h3 class="sp_title">Professional Skills</h3>
+                            <ul class="sp_list">
+                                <li class="sp_item">
+                                    <p class="sp_item_text">UI/UX Design</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li class="sp_item">
+                                    <p class="sp_item_text">Web Development</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                                <li class="sp_item">
+                                    <p class="sp_item_text">Marketing</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%;"
+                                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sp_right_panel col-6">
+                        <img src="img/skills_pic.png" class="sp_pic" alt="">
                     </div>
                 </div>
-                <img src="img/skills_pic.png" class="sp_pic" alt="">
             </div>
-            <div class="row skills_measures">
+            <div class="skills_measures">
                 <div class="container">
                     <div class="row skills_measures_content">
-                        <div class="sm_item col-xl-2">
+                        <div class="sm_item col-xl-2 col-3">
                             <img src="img/icon_1.png" alt="">
                             <p class="sm_item_digits">548</p>
                             <p class="sm_item_text">Projects Completed</p>
                         </div>
-                        <div class="sm_item col-xl-2">
+                        <div class="sm_item col-xl-2 col-3">
                             <img src="img/icon_2.png" alt="">
                             <p class="sm_item_digits">548</p>
                             <p class="sm_item_text">Working Hours</p>
                         </div>
-                        <div class="sm_item col-xl-2">
+                        <div class="sm_item col-xl-2 col-3">
                             <img src="img/icon_3.png" alt="">
                             <p class="sm_item_digits">548</p>
                             <p class="sm_item_text">Positive Feedbacks</p>
                         </div>
-                        <div class="sm_item col-xl-2">
+                        <div class="sm_item col-xl-2 col-3">
                             <img src="img/icon_4.png" alt="">
                             <p class="sm_item_digits">735</p>
                             <p class="sm_item_text">Happy Clients</p>
@@ -151,10 +178,11 @@
 
         <section class="container main_video">
             <h2 class="video_title">Out Work Process</h2>
-            <div class="video_description col-xl-8">Was years it seasons was there form he in in them together over
+            <div class="video_description col-lg-8 col-10">Was years it seasons was there form he in in them together
+                over
                 that,
                 third sixth gathered female creeping bearing behold years.</div>
-            <div class="video_container col-xl-12">
+            <div class="video_container col-12">
                 <img src="img/player_button.png" class="video_player_button" alt="">
                 <video src="video/Что такое CSS.mp4" controls preload="auto" poster="img/preview.png"
                     class="video_file"></video>
@@ -164,45 +192,45 @@
         <section class="main_directions">
             <div class="container">
                 <div class="row directions_content">
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_1.png" alt="">
                         <h5 class="direction_title">UI / UX Design</h5>
                         <p class="direction_description">Be set fourth land god darkness make it wherein own</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_2.png" alt="">
                         <h5 class="direction_title">Web Development</h5>
                         <p class="direction_description">A she'd them bring void moving third she'd kind fill</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_3.png" alt="">
                         <h5 class="direction_title">APP / Mobile</h5>
                         <p class="direction_description">Dominion man second spirit he, earth they're creeping</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_4.png" alt="">
                         <h5 class="direction_title">Game Design</h5>
                         <p class="direction_description">Morning his saying moveth it multiply appear life be</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_5.png" alt="">
                         <h5 class="direction_title">SEO / Marketing</h5>
                         <p class="direction_description">Give won't after land fill creeping
                             meat you, may</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_6.png" alt="">
                         <h5 class="direction_title">Photography</h5>
                         <p class="direction_description">Creepeth one seas cattle grass
                             give moving saw give</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_7.png" alt="">
                         <h5 class="direction_title">Graphic Design</h5>
                         <p class="direction_description">Open, great whales air rule for,
                             fourth life whales</p>
                     </div>
-                    <div class="direction col-3">
+                    <div class="direction col-lg-3 col-md-4 col-5">
                         <img src="img/direction_8.png" alt="">
                         <h5 class="direction_title">Illustrations</h5>
                         <p class="direction_description">Whales likeness hath, man kind
@@ -224,8 +252,8 @@
                 <div class="container carousel-inner quotes_content">
                     <div class="carousel-item active">
                         <div class="quote">
-                            <p class="quote_text col-xl-8">“Outstanding job and exceeded all expectations. It was a
-                                pleasure to work with them on a sizable first project and am looking forward to start
+                            <p class="quote_text col-lg-8 col-10">“Outstanding job and exceeded all expectations. It was
+                                a pleasure to work with them on a sizable first project and am looking forward to start
                                 the next one asap.”</p>
                             <p class="quote_author">Michael Hopkins</p>
 
@@ -233,16 +261,16 @@
                     </div>
                     <div class="carousel-item">
                         <div class="quote">
-                            <p class="quote_text col-xl-8">“Outstanding job and exceeded all expectations. It was a
-                                pleasure to work with them on a sizable first project and am looking forward to start
+                            <p class="quote_text col-lg-8 col-10">“Outstanding job and exceeded all expectations. It was
+                                a pleasure to work with them on a sizable first project and am looking forward to start
                                 the next one asap.”</p>
                             <p class="quote_author">Michael Hopkins</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="quote">
-                            <p class="quote_text col-xl-8">“Outstanding job and exceeded all expectations. It was a
-                                pleasure to work with them on a sizable first project and am looking forward to start
+                            <p class="quote_text col-lg-8 col-10">“Outstanding job and exceeded all expectations. It was
+                                a pleasure to work with them on a sizable first project and am looking forward to start
                                 the next one asap.”</p>
                             <p class="quote_author">Michael Hopkins</p>
                         </div>
@@ -254,10 +282,18 @@
         <section class="main_partners">
             <div class="container">
                 <div class="row partners_content">
-                    <img src="img/partner_1.png" alt="">
-                    <img src="img/partner_2.png" alt="">
-                    <img src="img/partner_3.png" alt="">
-                    <img src="img/partner_4.png" alt="">
+                    <div class="partner col-md-3 col-5">
+                        <img src="img/partner_1.png" alt="">
+                    </div>
+                    <div class="partner col-md-3 col-5">
+                        <img src="img/partner_2.png" alt="">
+                    </div>
+                    <div class="partner col-md-3 col-5">
+                        <img src="img/partner_3.png" alt="">
+                    </div>
+                    <div class="partner col-md-3 col-5">
+                        <img src="img/partner_4.png" alt="">
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -265,25 +301,31 @@
         <section class="main_feedback">
             <div class="container feedback_content">
                 <h2 class="feedback_title">Need a Project</h2>
-                <p class="feedback_description col-xl-6">Let us know what you're looking for in an agency. We'll take a
+                <p class="feedback_description col-xl-6 col-lg-7 col-md-8 col-10">Let us know what you're looking for in
+                    an
+                    agency.
+                    We'll take a
                     look and see if this could be the start of something beautiful.</p>
-                <p class="feedback_description col-xl-6">Let us know what you're looking for in an agency. We'll take a
+                <p class="feedback_description col-xl-6 col-lg-7 col-md-8 col-10">Let us know what you're looking for in
+                    an
+                    agency.
+                    We'll take a
                     look and see if this could be the start of something beautiful.</p>
-                <form action="post" class="feedback_form col-xl-8">
-                    <div class="col-xl-6">
+                <form action="post" class="feedback_form col-xl-8 col-lg-9 col-md-10 col-12">
+                    <div class="col-6">
                         <input type="text" class="field feedback_sender_name" placeholder="Your Name">
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-6">
                         <input type="email" class="field feedback_sender_email" placeholder="Your Email">
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-12">
                         <input type="text" class="field feedback_message_title" placeholder="Your Title">
                     </div>
-                    <div class="col-xl-12">
+                    <div class="col-12">
                         <textarea type="text" class="field feedback_comment" placeholder="Your Comment"></textarea>
                     </div>
-                    <div class="col-xl-3 feedback_submit">
-                        <button type="submit" class="field feedback_submit_button">Send Message</button>
+                    <div class="feedback_submit col-lg-3 col-md-4 col-5">
+                        <button type="submit" class="field feedback_submit_button">Send <span class="feedback_submit_button_span">Message</span></button>
                     </div>
                 </form>
             </div>
@@ -293,31 +335,31 @@
     <footer class="footer">
         <div class="container">
             <div class="row footer_content">
-                <div class="footer_title">
+                <div class="footer_name_containter">
                     <h3 class="footer_company_name">Macintosh Design, Inc.</h3>
                     <p class="footer_company_rights">© 2017 Macintosh. All rights reserved.</p>
                     <p class="footer_company_designer">Designed by Jefry.</p>
                 </div>
 
-                <div class="footer_contacts col-xl-2">
+                <div class="footer_contacts col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
                     <a href="mailto:hello@pirolltheme.com" class="footer_contacts_email">hello@pirolltheme.com</a>
                     <a href="tel:+44987065908" class="footer_contacts_phone">+44 987 065 908</a>
                 </div>
 
-                <ul class="footer_nav col-xl-3">
-                    <div class="col-xl-4">
+                <ul class="footer_nav col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">Projects</a></li>
                         <li><a href="" class="footer_nav_link">About</a></li>
                         <li><a href="" class="footer_nav_link">Services</a></li>
                         <li><a href="" class="footer_nav_link">Career</a></li>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">News</a></li>
                         <li><a href="" class="footer_nav_link">Events</a></li>
                         <li><a href="" class="footer_nav_link">Contact</a></li>
                         <li><a href="" class="footer_nav_link">Legals</a></li>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-3">
                         <li><a href="" class="footer_nav_link">Facebook</a></li>
                         <li><a href="" class="footer_nav_link">Twitter</a></li>
                         <li><a href="" class="footer_nav_link">Instagram</a></li>
