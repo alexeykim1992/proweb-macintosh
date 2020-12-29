@@ -977,7 +977,11 @@ a:hover {
 
 .contact_feedback {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
+}
+
+.contact_feedback_content{
+    margin: 0 -30px;
 }
 
 .contact_feedback_sumbit {
