@@ -739,6 +739,7 @@ a:hover {
 .main_about_me {
     overflow: hidden;
     background: #f5f5f5;
+    /* background: crimson; */
 }
 
 .about_me_content {
@@ -746,15 +747,21 @@ a:hover {
     justify-content: space-between;
 }
 
+.about_me_image_container{
+    height: 500px;
+}
+
 .about_me_img {
+    display: inline-block;
     position: absolute;
-    right: 0;
+    right: 15px;
     width: 50vw;
 }
 
 .about_me_info {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about_me_title {
