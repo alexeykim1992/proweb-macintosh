@@ -920,6 +920,10 @@ a:hover {
     border: none;
 }
 
+.project_control_buttons_panel .project_control_button:nth-of-type(3){
+    order: 1;
+}
+
 .project_control_buttons_panel .project_control_button.active {
     opacity: 1;
     background: yellow;
